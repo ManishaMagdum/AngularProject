@@ -1,0 +1,9 @@
+<h1 id="main">assign-binding works!</h1>
+<div><label id="label">Username:</label>
+    <input type="text" placeholder="Enter your name" [(ngModel)]="Name" id="input">
+   
+</div>
+
+<h3 id="string">{{Name}}</h3>
+<button id="but" [disabled]="Name==''" (click)="reset()">Submit</button>
+
